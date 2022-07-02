@@ -4,8 +4,6 @@ txt = "todolist.txt"
 tdl = open(txt, "r")
 line_count = len(tdl.readlines())
 user_args = ["-tm", "--taskmake", "-tp", "--taskprint", "-h", "--help", "-tc", "--taskcomplete", "-ct", "--cleartasks"]
-tick = " ✔"
-
 
 if sys.argv[1] not in user_args:
     print("The argument you specified does not exist, try -h, --help.")
