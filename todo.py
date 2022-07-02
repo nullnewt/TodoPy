@@ -49,8 +49,6 @@ elif sys.argv[1].lower() == user_args[6] or sys.argv[1] == user_args[7]:
                         data[sys.argv[2]] = data[sys.argv[2]] + " ✔"
                     elif int(user_num) <= line_count:
                         data[sys.argv[2]] = data[sys.argv[2]] + " ✔\n"
-                elif " ✔" in data:
-                    print("fart")
             with open(txt, "w") as file:
                 file.writelines(data)
                 tdl.close()
